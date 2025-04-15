@@ -1,0 +1,93 @@
+.two-column {
+    display: flex;
+    gap: 20px; /* Adjust spacing between columns */
+}
+
+.sidebar {
+    position: sticky;
+    top: 40px; /* Sticks the sidebar to the top of the viewport */
+    align-self: flex-start; /* Ensures it aligns properly in a flex container */
+    height: max-content; /* Optional: Makes the sidebar span the full height of the viewport */
+    overflow-y: auto; /* Optional: Adds scrolling if the content overflows */
+    background-color: #f4f4f4; /* Background color for better visibility */
+    padding: 30px;
+    border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+    box-sizing: border-box;
+}
+
+.main-content {
+    flex: 3; /* Main content takes more space */
+    padding: 10px;
+    border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+    box-sizing: border-box;
+}
+
+.sidebar-menu {
+    list-style-type: none; /* Remove default list styling */
+    padding: 10px; /* Remove default padding */
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: auto; /* Automatically adjust row height */
+    gap: 20px; /* Space between grid items */
+}
+
+.project {
+    padding: 10px;
+    border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+    background-color: #f9f9f9; /* Optional: Background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+    max-width: 400px; /* Limit form width */
+    margin: 0 auto; /* Center the form */
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+header {
+    position: sticky;
+    top: 0; /* Sticks the header to the top of the viewport */
+    z-index: 1000; /* Ensures the header stays above other elements */
+    background-color: #fff; 
+    border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+    padding: 0 10px 10px 10px; /* Optional: Add padding for better appearance */
+
+}
+
+.content{
+    min-height: 100vh; /* Ensures the content takes at least the full height of the viewport */
+    padding: 20px; /* Optional: Add padding for better appearance */
+    box-sizing: border-box; /* Ensures padding is included in the total height */
+    background-color: #f9f9f9; /* Optional: Set a background color */
+    margin: 20px; /* Optional: Add margin for spacing */
+    transition: background-color 0.3s ease; /* Optional: Smooth transition for background color */
+    border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+}
